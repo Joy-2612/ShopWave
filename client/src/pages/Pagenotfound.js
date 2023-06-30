@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "./../components/Layout/Layout";z
 
+
 const Pagenotfound = () => {
   return (
     <Layout title={"go back- page not found"}>
