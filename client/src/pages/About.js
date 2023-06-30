@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "./../components/Layout/Layout";
-axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com";
 
 const About = () => {
   return (
