@@ -9,7 +9,8 @@ import Layout from "./../components/Layout/Layout";
 import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
 
-axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com/";
+
+axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -110,7 +111,6 @@ const HomePage = () => {
   };
   return (
     <Layout title={"ALl Products - Best offers "}>
-      
       <div className="container-fluid row mt-3 home-page">
         <div className="col-md-3 filters">
           <h4 className="text-center">Filter By Category</h4>
@@ -145,14 +145,14 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-md-9 ">
-        {/* banner image */}
-      <img
-        src="\images\Logo.jpg"
-        className="banner-img"
-        alt="bannerimage"
-        width={"70%"}
-      />
-      {/* banner image */}
+          {/* banner image */}
+          <img
+            src="\images\Logo.jpg"
+            className="banner-img"
+            alt="bannerimage"
+            width={"70%"}
+          />
+          {/* banner image */}
           <h1 className="text-center">ALL PRODUCTS</h1>
           <div className="d-flex flex-wrap">
             {products?.map((p) => (

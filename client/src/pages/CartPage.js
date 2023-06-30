@@ -8,6 +8,7 @@ import { AiFillWarning } from "react-icons/ai";
 import axios from "axios";
 import toast from "react-hot-toast";
 import "../styles/CartStyles.css";
+axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com";
 
 const CartPage = () => {
   const [auth, setAuth] = useAuth();

@@ -4,6 +4,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import "../../styles/AuthStyles.css";
+axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com";
+
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

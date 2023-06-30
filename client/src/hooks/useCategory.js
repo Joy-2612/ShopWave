@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com";
+
 
 export default function useCategory() {
   const [categories, setCategories] = useState([]);

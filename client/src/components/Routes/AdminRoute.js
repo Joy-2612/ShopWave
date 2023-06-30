@@ -3,6 +3,7 @@ import { useAuth } from "../../context/auth";
 import { Outlet } from "react-router-dom";
 import axios from "axios";
 import Spinner from "../Spinner";
+axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com";
 
 export default function PrivateRoute() {
   const [ok, setOk] = useState(false);

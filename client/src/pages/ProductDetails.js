@@ -3,6 +3,8 @@ import Layout from "./../components/Layout/Layout";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import "../styles/ProductDetailsStyles.css";
+axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com";
+
 
 const ProductDetails = () => {
   const params = useParams();
