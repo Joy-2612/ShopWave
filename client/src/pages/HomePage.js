@@ -9,6 +9,8 @@ import Layout from "./../components/Layout/Layout";
 import { AiOutlineReload } from "react-icons/ai";
 import "../styles/Homepage.css";
 
+axios.defaults.baseURL = "https://shopwave-pr6m.onrender.com/";
+
 const HomePage = () => {
   const navigate = useNavigate();
   const [cart, setCart] = useCart();
