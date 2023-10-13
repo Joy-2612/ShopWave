@@ -73,7 +73,7 @@ export const getProductController = async (req, res) => {
     res.status(200).send({
       success: true,
       counTotal: products.length,
-      message: "ALLProducts ",
+      message: "ALL Products",
       products,
     });
   } catch (error) {
@@ -306,11 +306,12 @@ export const realtedProductController = async (req, res) => {
   }
 };
 
-// get prdocyst by catgory
+// get products by catgory
 export const productCategoryController = async (req, res) => {
   try {
     const category = await categoryModel.findOne({ slug: req.params.slug });
     const products = await productModel.find({ category }).populate("category");
+
     res.status(200).send({
       success: true,
       category,

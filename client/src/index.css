@@ -31,12 +31,12 @@
 .navbar-brand {
   font-weight: 700;
   font-family: "roboto", sans-serif;
-  
+  width: 30%;
   letter-spacing: 3px;
 }
 
 .navbar-brand img{
-  width: 20%;
+  width: 50%;
 }
 
 .search-form {
